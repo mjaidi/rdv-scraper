@@ -1,7 +1,8 @@
 class NotificationsMailer < ApplicationMailer
-  def notify_success
+  def notify_success(mail)
+    p 'notify' + mail
     mail(
-      to:       'majid.jaidi@gmail.com',
+      to:       mail,
       subject:  "Rdv Disponible!"
     )
   end

@@ -17,6 +17,7 @@ task scrape: :environment do
     puts 'nothing found'
   else
     puts 'rdv found'
-    NotificationsMailer.notify_success.deliver_now
+    NotificationsMailer.notify_success('majid.jaidi@gmail.com').deliver_now
+    NotificationsMailer.notify_success('yasminelaraki91@gmail.com').deliver_now
   end
 end
