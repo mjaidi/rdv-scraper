@@ -3,7 +3,7 @@ class NotificationsMailer < ApplicationMailer
     p 'notify' + mail
     mail(
       to:       mail,
-      subject:  "Rdv Disponible!"
+      subject:  "Rdv Overts!"
     )
   end
 
